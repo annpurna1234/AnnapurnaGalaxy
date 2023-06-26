@@ -253,7 +253,7 @@ section {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -589,7 +589,7 @@ section {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero .info {
     padding: 0 50px;
   }
@@ -732,7 +732,7 @@ section {
   margin-top: 100px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .features .features-item+.features-item {
     margin-top: 40px;
   }
@@ -1084,7 +1084,7 @@ font-family: "Open Sans", sans-serif;
 	cursor: pointer;
 }
 .button-a {
-    background-color: #0d7ecc;
+    background-color: var(--color-default);
     color: #fff;
     border-color: #cde1f8;
 }
@@ -1155,10 +1155,11 @@ font-family: "Open Sans", sans-serif;
 /* -------------------------------- */
 
 /* Mobile Friendly Changes */
-/* @media (max-width:400px){ */
-/* .about .section-header { */
-
-/* } */
+@media (max-width:900px){
+#contactUsForm marquee span::before{
+    content: "\A";
+    white-space: pre;
+}};
 
 /* .section-bubble, .section-bubble_type-b, .section-bubble_type-a, .section-bubble4, .section-bubble3, .section-bubble2, .section-bubble1 { */
   /* margin-bottom: 20vw; */
